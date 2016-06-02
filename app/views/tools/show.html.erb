@@ -1,0 +1,10 @@
+
+<ul class="tool_info">
+  <li><%= @tool.name %> </li>
+  <li>$<%= @tool.price %></li>
+  <li>InStock: <%= @tool.quantity %></li>
+</ul>
+
+<%= link_to "My Tools", user_path(@user) %>
+<%= link_to "Edit", edit_tool_path %>
+<%= link_to "Delete", tool_path(@tool), method: :delete %>
